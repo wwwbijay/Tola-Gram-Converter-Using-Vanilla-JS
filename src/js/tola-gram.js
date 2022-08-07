@@ -2,12 +2,12 @@ const convConst = 11.6638;
 
 function gramToTola(target, gram) {
   let tola = (convConst * gram) / 10;
-  target.value = tola;
+  target.value = (tola).toFixed(2);
 }
 
 function tolaToGram(target, tola) {
   let gram = (tola * 10) / convConst;
-  target.value = gram;
+  target.value = (gram).toFixed(2);
 }
 
 function debounce(func, timeout = 500) {
@@ -23,6 +23,7 @@ function debounce(func, timeout = 500) {
 export const callTolaToGram = debounce((target, value ) => {
     return tolaToGram(target, value);
 });
+
 export const callGramToTola = debounce((target, value) => {
     return gramToTola(target, value);
 });

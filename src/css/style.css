@@ -97,7 +97,9 @@ button:focus-visible {
   }
 }
 
-
+.sec{
+  padding: 40px 0;
+}
 .heading{
   margin: 0 0 50px;
 }
