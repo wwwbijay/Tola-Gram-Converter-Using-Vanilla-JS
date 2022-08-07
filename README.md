@@ -2,4 +2,4 @@
 Tola-Gram Converter Using Vanilla JS
 
 # Run Project
-npm run dev
+`npm run dev`
